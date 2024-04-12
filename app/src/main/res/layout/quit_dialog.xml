@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="40dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquare_exbold"
+            android:text="계정을"
+            android:textColor="@color/포인트_갈색"
+            android:textSize="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/nanumsquare_exbold"
+            android:text=" 탈퇴"
+            android:textColor="@color/포인트_노랑"
+            android:textSize="24dp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/nanumsquare_exbold"
+            android:text=" 하시겠어요?"
+            android:textColor="@color/포인트_갈색"
+            android:textSize="24dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="계정 탈퇴시 복구는 불가능해요"
+        android:fontFamily="@font/nanumsquare_exbold"
+        android:textColor="@color/포인트_초록"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="14sp"
+        >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/nobtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/mybutton"
+            android:fontFamily="@font/nanumsquare_exbold"
+            android:text="아니요"
+            android:textColor="@color/배경_베이지"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/yesbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mybutton"
+            android:fontFamily="@font/nanumsquare_exbold"
+            android:text="네"
+            android:textColor="@color/포인트_갈색"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

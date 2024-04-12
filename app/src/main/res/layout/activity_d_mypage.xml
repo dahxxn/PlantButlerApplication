@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2EFE4"
+    android:orientation="vertical"
+    android:gravity="center|top"
+    android:padding="60dp">
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_marginRight="120dp"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:background="@drawable/basic_button"
+        android:text="이전"
+        android:textColor="#765D58"
+        android:textSize="18sp"
+        android:fontFamily="@font/nanumsquare_bold"
+        android:textStyle="bold"
+        android:gravity="center_vertical|center"
+        android:textAlignment="center"
+        >
+
+    </Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanumsquare_bold"
+        android:layout_gravity="center"
+        android:text="마이페이지"
+        android:textColor="#765D58"
+        android:textSize="24sp"
+        android:textStyle="bold">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/nanumsquare_bold"
+        android:text="보관된 식물들을 확인할 수 있어요!"
+        android:textColor="#03A63C"
+        android:textSize="16sp">
+    </TextView>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+
+        <View
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/circle_ej">
+        </View>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="90dp"
+            android:layout_height="120dp"
+            android:id="@+id/mypage_currentPlant"
+            android:onClick = "onClick"
+            >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/mypage_currentPlant_pot"
+            android:layout_width="90dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:onClick="onClick"></ImageView>
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="현재 "
+            android:textSize="18sp"
+            android:textColor="#765D58"
+            android:fontFamily="@font/nanumsquare_bold"
+            android:textStyle="bold"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/register_currentPlantName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquare_bold"
+            android:text=""
+            android:textColor="#03A63C"
+            android:textSize="18sp"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 가 자라고 있어요."
+            android:textSize="18sp"
+            android:textColor="#765D58"
+            android:fontFamily="@font/nanumsquare_bold"
+            android:textStyle="bold"
+            >
+        </TextView>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/img6"
+            android:layout_marginTop="17dp">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="보관된 식물"
+            android:fontFamily="@font/nanumsquare_bold"
+            android:textColor="#765D58"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="식물을 선택하면 커스텀을 할 수 있어요!"
+            android:textColor="#03A63C"
+            android:fontFamily="@font/nanumsquare_bold"
+            android:layout_marginLeft="42sp"
+            android:layout_marginTop="37sp">
+
+        </TextView>
+    </FrameLayout>
+
+    <ScrollView
+        android:background="@drawable/basic_button"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <GridLayout
+            android:layout_gravity="center"
+            android:rowCount="3"
+            android:columnCount="3"
+            android:paddingTop="100dp"
+            android:paddingHorizontal="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/plant1"
+                    android:layout_width="90dp"
+                    android:layout_height="120dp"
+                    android:onClick="onClick"
+                    >
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/plant1_pot"
+                    android:layout_width="90dp"
+                    android:layout_height="120dp"
+                    android:onClick="onClick">
+                </ImageView>
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/plant2"
+                    android:layout_width="90dp"
+                    android:layout_height="120dp"
+                    android:onClick="onClick"
+                    >
+                </ImageView>
+                <ImageView
+                    android:id="@+id/plant2_pot"
+                    android:layout_width="90dp"
+                    android:layout_height="120dp"
+                    android:onClick="onClick">
+                </ImageView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/plant3"
+                    android:layout_width="90dp"
+                    android:layout_height="120dp"
+                    android:onClick="onClick"
+                    >
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/plant3_pot"
+                    android:layout_width="90dp"
+                    android:layout_height="120dp"
+                    android:onClick="onClick">
+                </ImageView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/plant4"
+                    android:layout_width="90dp"
+                    android:layout_height="120dp"
+                    android:onClick="onClick"
+                    >
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/plant4_pot"
+                    android:layout_width="90dp"
+                    android:layout_height="120dp"
+                    android:onClick="onClick">
+                </ImageView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/plant5"
+                    android:layout_width="90dp"
+                    android:layout_height="120dp"
+                    android:onClick="onClick"
+                    >
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/plant5_pot"
+                    android:layout_width="90dp"
+                    android:layout_height="120dp"
+                    android:onClick="onClick">
+                </ImageView>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/plant6"
+                    android:layout_width="90dp"
+                    android:layout_height="120dp"
+                    android:onClick="onClick"
+                    >
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/plant6_pot"
+                    android:layout_width="90dp"
+                    android:layout_height="120dp"
+                    android:onClick="onClick">
+                </ImageView>
+            </FrameLayout>
+        </GridLayout>
+
+    </ScrollView>
+</LinearLayout>
+

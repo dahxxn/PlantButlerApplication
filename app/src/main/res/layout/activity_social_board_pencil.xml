@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2EfE4"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#B2D9A0"
+        android:fontFamily="@font/nanumsquare_exbold"
+        android:text="이전"
+        android:textAlignment="center"
+        android:textColor="#765D58"
+        android:textSize="15sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="168dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/nanumsquare_exbold"
+        android:text="글쓰기"
+        android:textColor="#765D58"
+        android:textSize="25sp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nanumsquare_exbold"
+            android:text="제목"
+            android:textColor="#F2A413"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="88dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nanumsquare_exbold"
+            android:text="을 입력하세요"
+            android:textColor="#765D58"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/input_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="48dp"
+            android:backgroundTint="#765D58"
+            android:ems="15"
+            android:minHeight="48dp"
+            android:textColor="#765D58"
+            android:textCursorDrawable="@null"
+            tools:ignore="SpeakableTextPresentCheck" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="120dp"
+            android:fontFamily="@font/nanumsquare_exbold"
+            android:text="글 내용"
+            android:textColor="#F2A413"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="105dp"
+            android:layout_marginTop="120dp"
+            android:fontFamily="@font/nanumsquare_exbold"
+            android:text="을 입력하세요"
+            android:textColor="#765D58"
+            android:textSize="16sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="320dp"
+                android:layout_height="141dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="155dp"
+                android:background="@drawable/writing_rectangle" />
+
+            <EditText
+                android:id="@+id/input_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:background="@android:color/transparent"
+                android:backgroundTint="#765D58"
+                android:ems="15"
+                android:fontFamily="@font/nanumsquare_exbold"
+                android:hint="텍스트를 입력하세요!"
+                android:minHeight="48dp"
+                android:textColor="#765D58"
+                android:textCursorDrawable="@null"
+                android:textSize="15sp" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#B2D9A0"
+        android:fontFamily="@font/nanumsquare_exbold"
+        android:text="등록"
+        android:textAlignment="center"
+        android:textColor="#765D58"
+        android:textSize="15sp" />
+
+</LinearLayout>

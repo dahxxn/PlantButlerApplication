@@ -1,0 +1,306 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2EfE4"
+    android:orientation="vertical"
+    android:id="@+id/container"
+    android:paddingBottom="30dp">
+
+    <Button
+        android:id="@+id/g_back"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#B2D9A0"
+        android:fontFamily="@font/nanumsquare_exbold"
+        android:text="이전"
+        android:textAlignment="center"
+        android:textColor="#765D58"
+        android:textSize="15sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/nanumsquare_exbold"
+        android:text="게시판"
+        android:textColor="#765D58"
+        android:textSize="25sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nanumsquare_exbold"
+        android:text="식집사님들과 일상을 공유해보아요!"
+        android:textColor="#03A63C"
+        android:textSize="14sp"
+        android:layout_marginBottom="30dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/board_w1"
+                android:layout_width="345dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_btn"
+                android:backgroundTint="#B2D9A0"
+                android:drawableRight="@drawable/heart"
+                android:fontFamily="@font/nanumsquare_exbold"
+                android:gravity="center_vertical"
+                android:paddingRight="70dp"
+                android:textColor="#765D58"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/board_heart_1"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="305dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#B2D9A0"
+                android:fontFamily="@font/nanumsquare_exbold"
+                android:textColor="#F2EFE4"
+                android:textSize="15sp" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+
+            <Button
+                android:id="@+id/board_w2"
+                android:layout_width="345dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_btn"
+                android:backgroundTint="#B2D9A0"
+                android:drawableRight="@drawable/heart"
+                android:fontFamily="@font/nanumsquare_exbold"
+                android:gravity="center_vertical"
+                android:paddingRight="70dp"
+
+                android:textColor="#765D58"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/board_heart_2"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="305dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#B2D9A0"
+                android:fontFamily="@font/nanumsquare_exbold"
+                android:textColor="#F2EFE4"
+                android:textSize="15sp" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/board_w3"
+                android:layout_width="345dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_btn"
+                android:backgroundTint="#B2D9A0"
+                android:drawableRight="@drawable/heart"
+                android:fontFamily="@font/nanumsquare_exbold"
+                android:gravity="center_vertical"
+                android:paddingRight="70dp"
+
+                android:textColor="#765D58"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/board_heart_3"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="305dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#B2D9A0"
+                android:fontFamily="@font/nanumsquare_exbold"
+
+                android:textColor="#F2EFE4"
+                android:textSize="15sp" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/board_w4"
+                android:layout_width="345dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_btn"
+                android:backgroundTint="#B2D9A0"
+                android:drawableRight="@drawable/heart"
+                android:fontFamily="@font/nanumsquare_exbold"
+                android:gravity="center_vertical"
+                android:paddingRight="70dp"
+
+                android:textColor="#765D58"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/board_heart_4"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="305dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#B2D9A0"
+                android:fontFamily="@font/nanumsquare_exbold"
+
+                android:textColor="#F2EFE4"
+                android:textSize="15sp" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/board_w5"
+                android:layout_width="345dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_btn"
+                android:backgroundTint="#B2D9A0"
+                android:drawableRight="@drawable/heart"
+                android:fontFamily="@font/nanumsquare_exbold"
+                android:gravity="center_vertical"
+                android:paddingRight="70dp"
+                android:textColor="#765D58"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/board_heart_5"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="305dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#B2D9A0"
+                android:fontFamily="@font/nanumsquare_exbold"
+                android:textColor="#F2EFE4"
+                android:textSize="15sp" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/board_w6"
+                android:layout_width="345dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_btn"
+                android:backgroundTint="#B2D9A0"
+                android:drawableRight="@drawable/heart"
+                android:fontFamily="@font/nanumsquare_exbold"
+                android:gravity="center_vertical"
+                android:paddingRight="70dp"
+
+                android:textColor="#765D58"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/board_heart_6"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="305dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#B2D9A0"
+                android:fontFamily="@font/nanumsquare_exbold"
+
+                android:textColor="#F2EFE4"
+                android:textSize="15sp" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/board_pencil"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="327dp"
+        android:background="@drawable/pencil" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="330dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/nanumsquare_exbold"
+        android:text="글쓰기"
+        android:textAlignment="center"
+        android:textColor="#765D58"
+        android:textSize="12sp" />
+
+
+</LinearLayout>

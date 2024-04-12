@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/beige"
+    >
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#B2D9A0"
+        android:fontFamily="@font/nanumsquare_exbold"
+        android:text="이전"
+        android:textAlignment="center"
+        android:textColor="#765D58"
+        android:textSize="15sp" />
+    <!-- 상점 상단  -->
+
+    <!--  아이템 리스트  -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/potstore"></ImageView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquare_exbold"
+                    android:text="화분 "
+                    android:textColor="@color/orange"
+                    android:textSize="25sp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquare_exbold"
+                    android:text="상점"
+                    android:textColor="@color/brown"
+                    android:textSize="25sp"></TextView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumsquare_exbold"
+                android:text="원하는 화분으로 식물을 커스텀하세요! "
+                android:textColor="@color/green"
+                android:textSize="14sp"></TextView>
+        </LinearLayout>
+
+        <!--  코인     -->
+        <FrameLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/coin">
+
+            <TextView
+                android:id="@+id/store_coin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nanumsquare_exbold"
+                android:text=""
+                android:textColor="@color/brown"
+                android:textSize="15sp"></TextView>
+        </FrameLayout>
+    </LinearLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:scrollbarFadeDuration="0"
+        android:scrollbarSize="10dp"
+        android:scrollbarThumbVertical="@color/green"
+        android:verticalScrollbarPosition="right">
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:columnCount="3"
+            android:orientation="horizontal">
+            <!--  아이템 1     -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp">
+
+                <!--        가장 뒤에 위치한 연두색 박스를 밑에 두기 위해 리니어레이아웃 사용-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--        투명 이미지뷰를 생성하여 연두색 박스를 약간 아래에 배치-->
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="10dp"
+                        android:src="@android:color/transparent"></ImageView>
+
+                    <!--연두색 박스에 아이템 이미지, 아이템 이름, 아이템 설명을 두기 위한 프레임 레이아웃-->
+                    <FrameLayout
+                        android:layout_width="110dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/round_rect_lg">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            >
+
+                            <FrameLayout
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/circle_w">
+                                <!--실제 아이템 이미지-->
+                                <ImageButton
+                                    android:id="@+id/store_pot_item1_img"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center"
+                                    android:background="@android:color/transparent"
+                                    android:scaleType="fitCenter"
+                                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+                                    android:src="@drawable/pot1"
+                                    android:onClick = "onClick"
+                                    >
+                                </ImageButton>
+                            </FrameLayout>
+                            <!--아이템 이름-->
+                            <TextView
+                                android:id="@+id/store_dirt_item1_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/nanumsquare_exbold"
+                                android:text="기본 화분 1"
+                                android:textColor="@color/brown"
+                                android:textSize="14sp"></TextView>
+
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+                <!--아이템 가격표를 꾸미기 위한 프레임 레아이웃-->
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center_horizontal">
+                    <!--초록 상단 바-->
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/round_rect_g"></ImageView>
+                    <!--아이템 가격-->
+                    <TextView
+                        android:id="@+id/store_dirt_item1_cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/nanumsquare_exbold"
+                        android:text="10P"
+                        android:textColor="@color/배경_베이지"
+                        android:textSize="14sp"></TextView>
+                </FrameLayout>
+
+                <!--    아이템에 잠금 레이아웃/뷰를 설정(on/off)할 때 사용할 view        -->
+                <!--    java 코딩 시 id를 통해서 lock을 적용할 수 있도록 작성할 것 같아 추가함-->
+                <FrameLayout
+                    android:id="@+id/store_dirt_item1_lock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <!--  아이템 2     -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="10dp"
+                        android:src="@android:color/transparent"></ImageView>
+
+                    <FrameLayout
+                        android:layout_width="110dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/round_rect_lg">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/circle_w">
+
+                                <ImageButton
+                                    android:id="@+id/store_pot_item2_img"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center"
+                                    android:background="@android:color/transparent"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/pot2"
+                                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck"
+                                    android:onClick = "onClick"></ImageButton>
+                            </FrameLayout>
+
+                            <TextView
+                                android:id="@+id/store_dirt_item2_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/nanumsquare_exbold"
+                                android:text="기본 화분 2"
+                                android:textColor="@color/brown"
+                                android:textSize="14sp"></TextView>
+
+
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center_horizontal">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/round_rect_g"></ImageView>
+
+                    <TextView
+                        android:id="@+id/store_dirt_item2_cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/nanumsquare_exbold"
+                        android:text="15P"
+                        android:textColor="@color/배경_베이지"
+                        android:textSize="14sp"></TextView>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/store_dirt_item2_lock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <!--  아이템 3     -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="10dp"
+                        android:src="@android:color/transparent"></ImageView>
+
+                    <FrameLayout
+                        android:layout_width="110dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/round_rect_lg">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/circle_w">
+
+                                <ImageButton
+                                    android:id="@+id/store_pot_item3_img"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center"
+                                    android:background="@android:color/transparent"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/pot3"
+                                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck"
+                                    android:onClick = "onClick"></ImageButton>
+                            </FrameLayout>
+
+                            <TextView
+                                android:id="@+id/store_dirt_item3_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/nanumsquare_exbold"
+                                android:text="기본 화분 3"
+                                android:textColor="@color/brown"
+                                android:textSize="14sp"></TextView>
+
+
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center_horizontal">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/round_rect_g"></ImageView>
+
+                    <TextView
+                        android:id="@+id/store_dirt_item3_cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/nanumsquare_exbold"
+                        android:text="20P"
+                        android:textColor="@color/배경_베이지"
+                        android:textSize="14sp"></TextView>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/store_dirt_item3_lock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <!--  아이템 4     -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="10dp"
+                        android:src="@android:color/transparent"></ImageView>
+
+                    <FrameLayout
+                        android:layout_width="110dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/round_rect_lg">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/circle_w">
+
+                                <ImageButton
+                                    android:id="@+id/store_pot_item4_img"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center"
+                                    android:background="@android:color/transparent"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/pot4"
+                                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck"
+                                    android:onClick = "onClick"></ImageButton>
+                            </FrameLayout>
+
+                            <TextView
+                                android:id="@+id/store_dirt_item4_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/nanumsquare_exbold"
+                                android:text="기본 화분 4"
+                                android:textColor="@color/brown"
+                                android:textSize="14sp"></TextView>
+
+
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center_horizontal">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/round_rect_g"></ImageView>
+
+                    <TextView
+                        android:id="@+id/store_dirt_item4_cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/nanumsquare_exbold"
+                        android:text="25P"
+                        android:textColor="@color/배경_베이지"
+                        android:textSize="14sp"></TextView>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/store_dirt_item4_lock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </FrameLayout>
+            </FrameLayout>
+
+            <!--  아이템 5     -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="10dp"
+                        android:src="@android:color/transparent"></ImageView>
+
+                    <FrameLayout
+                        android:layout_width="110dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/round_rect_lg">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/circle_w">
+
+                                <ImageButton
+                                    android:id="@+id/store_pot_item5_img"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center"
+                                    android:background="@android:color/transparent"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/pot5"
+                                    tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck"
+                                    android:onClick = "onClick"></ImageButton>
+                            </FrameLayout>
+
+                            <TextView
+                                android:id="@+id/store_dirt_item5_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/nanumsquare_exbold"
+                                android:text="기본 화분 5"
+                                android:textColor="@color/brown"
+                                android:textSize="14sp"></TextView>
+
+
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center_horizontal">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/round_rect_g"></ImageView>
+
+                    <TextView
+                        android:id="@+id/store_dirt_item5_cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/nanumsquare_exbold"
+                        android:text="30P"
+                        android:textColor="@color/배경_베이지"
+                        android:textSize="14sp"></TextView>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/store_dirt_item5_lock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </FrameLayout>
+            </FrameLayout>
+
+            <!--  아이템 6     -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="10dp"
+                        android:src="@android:color/transparent"></ImageView>
+
+                    <FrameLayout
+                        android:layout_width="110dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/round_rect_lg">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/circle_w">
+
+                                <ImageButton
+                                    android:id="@+id/store_pot_item6_img"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center"
+                                    android:background="@android:color/transparent"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/pot6"
+                                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck"
+                                    android:onClick = "onClick"></ImageButton>
+                            </FrameLayout>
+
+                            <TextView
+                                android:id="@+id/store_dirt_item6_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/nanumsquare_exbold"
+                                android:text="기본 화분 6"
+                                android:textColor="@color/brown"
+                                android:textSize="14sp"></TextView>
+
+
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center_horizontal">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/round_rect_g"></ImageView>
+
+                    <TextView
+                        android:id="@+id/store_dirt_item6_cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/nanumsquare_exbold"
+                        android:text="40P"
+                        android:textColor="@color/배경_베이지"
+                        android:textSize="14sp"></TextView>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/store_dirt_item6_lock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </FrameLayout>
+
+            </FrameLayout>
+        </GridLayout>
+    </ScrollView>
+
+</LinearLayout>

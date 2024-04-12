@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2EFE4"
+    android:orientation="vertical"
+    android:gravity="center|top"
+    android:padding="60dp">
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_marginRight="120dp"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:background="@drawable/basic_button"
+        android:text="이전"
+        android:textColor="#765D58"
+        android:textSize="18sp"
+        android:fontFamily="@font/nanumsquare_bold"
+        android:textStyle="bold"
+        android:gravity="center_vertical|center"
+        android:textAlignment="center"
+        >
+    </Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanumsquare_bold"
+        android:layout_gravity="center"
+        android:text="아이템 적용"
+        android:textColor="#765D58"
+        android:textSize="24sp"
+        android:textStyle="bold">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/nanumsquare_bold"
+        android:text="현재 키우고 있는 식물에 아이템을 적용할 수 있어요!"
+        android:textColor="#03A63C"
+        android:textSize="14sp">
+    </TextView>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+
+        <View
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/circle_ej">
+        </View>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="90dp"
+            android:layout_height="120dp"
+            android:id="@+id/mypage_currentPlant"
+            android:onClick = "onClick"
+            >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/mypage_currentPlant_pot"
+            android:layout_width="90dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:onClick="onClick"></ImageView>
+
+
+    </FrameLayout>
+    <!--식물 성장도        -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/plantName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquareeb"
+            android:textColor="@color/green"
+            android:textSize="18sp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquareeb"
+            android:text="는 "
+            android:textColor="@color/brown"
+            android:textSize="18sp"></TextView>
+
+        <TextView
+            android:id="@+id/plantXP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquareeb"
+            android:textColor="@color/orange"
+            android:textSize="18sp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquareeb"
+            android:text="% 성장 중"
+            android:textColor="@color/brown"
+            android:textSize="18sp"></TextView>
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/img7">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/nanumsquare_bold"
+            android:text="아이템 창"
+            android:textColor="#765D58"
+            android:textSize="18sp">
+
+        </TextView>
+
+        <TextView
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42sp"
+            android:layout_marginTop="37sp"
+            android:fontFamily="@font/nanumsquare_bold"
+            android:text="아이템을 선택하면 현재 식물에 적용할 수 있어요!"
+            android:textColor="#03A63C">
+
+        </TextView>
+    </FrameLayout>
+    <ScrollView
+        android:background="@drawable/basic_button"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <GridLayout
+            android:layout_gravity="center"
+            android:rowCount="3"
+            android:columnCount="3"
+            android:paddingTop="100dp"
+            android:paddingHorizontal="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/item1"
+                    android:layout_width="90dp"
+                    android:layout_height="120dp"
+                    android:onClick="onClick">
+                </ImageView>
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/item2"
+                    android:layout_width="90dp"
+                    android:layout_height="120dp"
+                    android:onClick="onClick">
+                </ImageView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+
+                <ImageView
+                    android:id="@+id/item3"
+                    android:layout_width="90dp"
+                    android:layout_height="120dp"
+                    android:onClick="onClick">
+                </ImageView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/item4"
+                    android:layout_width="90dp"
+                    android:layout_height="120dp"
+                    android:onClick="onClick">
+                </ImageView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/item5"
+                    android:layout_width="90dp"
+                    android:layout_height="120dp"
+                    android:onClick="onClick">
+                </ImageView>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/item6"
+                    android:layout_width="90dp"
+                    android:layout_height="120dp"
+                    android:onClick="onClick">
+                </ImageView>
+            </FrameLayout>
+        </GridLayout>
+
+    </ScrollView>
+
+</LinearLayout>

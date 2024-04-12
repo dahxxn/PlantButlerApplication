@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="36dp"
+    android:paddingTop="48dp"
+    android:paddingRight="36dp"
+    android:paddingBottom="48dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:fontFamily="@font/nanumsquare_exbold"
+                android:text="해바라기"
+                android:textColor="@color/포인트_초록"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumsquare_exbold"
+                android:text="를"
+                android:textColor="@color/포인트_갈색"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/nanumsquare_exbold"
+            android:text="선택하시겠어요?"
+            android:textColor="@color/포인트_갈색"
+            android:textSize="24dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/plant1_2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/nobtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/mybutton"
+            android:fontFamily="@font/nanumsquare_exbold"
+            android:text="아니요"
+            android:textColor="@color/배경_베이지"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/yesbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mybutton"
+            android:fontFamily="@font/nanumsquare_exbold"
+            android:text="네"
+            android:textColor="@color/포인트_갈색"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

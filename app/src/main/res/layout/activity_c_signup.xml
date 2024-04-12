@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/배경_베이지" android:gravity="center" android:orientation="vertical" android:padding="60dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        android:textSize="25sp"
+        android:textColor="@color/포인트_갈색"
+        android:fontFamily="@font/nanumsquare_exbold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nanumsquare_exbold"
+        android:text="식집사를 통해 환경을 지켜보아요!"
+        android:textColor="#03A63C"
+        android:textSize="14sp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/register_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/nanumsquare_exbold"
+        android:hint="이메일을 입력해 주세요"
+
+        android:minHeight="48dp"
+        tools:ignore="TouchTargetSizeCheck"
+        android:backgroundTint="#765D58"
+        />
+
+    <EditText
+        android:id="@+id/register_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+
+        android:fontFamily="@font/nanumsquare_exbold"
+
+        android:backgroundTint="@color/포인트_갈색"
+        android:minHeight="48dp"
+        android:hint="비밀번호를 입력해 주세요"
+        tools:ignore="TouchTargetSizeCheck"/>
+
+    <FrameLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/register_passwordCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquare_exbold"
+            android:hint="비밀번호를 다시 입력하세요"
+            android:backgroundTint="@color/포인트_갈색"
+            android:minHeight="48dp"
+            tools:ignore="TouchTargetSizeCheck"/>
+        <Button
+            android:id="@+id/register_passwordCheck_btn"
+            android:layout_width="54dp"
+            android:layout_height="24dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/nanumsquare_exbold"
+            android:text="확인"
+            android:textColor="@color/포인트_초록"
+            android:onClick = "onClick"/>
+
+    </FrameLayout>
+    <EditText
+        android:id="@+id/register_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/nanumsquare_exbold"
+        android:hint="닉네임을 입력해 주세요"
+        tools:ignore="TouchTargetSizeCheck"
+        android:backgroundTint="@color/포인트_갈색"
+        android:minHeight="48dp"/>
+
+
+    <Button
+        android:id="@+id/register_next_btn"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        android:textSize="18sp"
+        android:background="@drawable/mybutton"
+        android:fontFamily="@font/nanumsquare_exbold"
+        android:textColor="@color/포인트_갈색"
+        android:onClick = "onClick"/>
+</LinearLayout>

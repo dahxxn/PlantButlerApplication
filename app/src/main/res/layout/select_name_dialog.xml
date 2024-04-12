@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:layout_gravity="center"
+    >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquare_exbold"
+            android:text="식물        을 지어 주세요!"
+            android:textColor="@color/포인트_갈색"
+            android:textSize="25sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquare_exbold"
+            android:text="        이름         "
+            android:textColor="@color/포인트_노랑"
+            android:textSize="25sp" />
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/etPlantName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/포인트_갈색"/>
+
+    <Button
+        android:id="@+id/yesbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="확정"
+        android:textSize="20sp"
+        android:fontFamily="@font/nanumsquare_exbold"
+        android:textColor="@color/포인트_갈색"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/mybutton"/>
+
+
+</LinearLayout>

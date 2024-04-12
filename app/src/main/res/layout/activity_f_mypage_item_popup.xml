@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical"
+    android:paddingLeft="36dp"
+    android:paddingTop="56dp"
+    android:paddingRight="36dp"
+    android:paddingBottom="56dp">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="적용하시겠습니까?"
+            android:textSize="16sp"
+            android:textColor="#765D58"
+            android:fontFamily="@font/nanumsquare_bold"
+            android:textStyle="bold"
+            >
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/nobtn"
+            android:layout_width="55dp"
+            android:layout_height="28dp"
+            android:background="@drawable/basic_button"
+            android:fontFamily="@font/nanumsquare_bold"
+            android:gravity="center"
+            android:text="아니요"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"></Button>
+        <Button
+            android:id="@+id/yesbtn"
+            android:layout_width="55dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="18dp"
+            android:background="@drawable/basic_button"
+            android:fontFamily="@font/nanumsquare_bold"
+            android:gravity="center"
+            android:text="네"
+            android:textAlignment="center"
+            android:textColor="#765D58"
+            android:textSize="15sp"
+            android:textStyle="bold"></Button>
+    </LinearLayout>
+</LinearLayout>

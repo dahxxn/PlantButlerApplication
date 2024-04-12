@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2EfE4"
+    android:orientation="vertical"
+    android:id="@+id/container">
+    <Button
+        android:id="@+id/back"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="21dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#B2D9A0"
+        android:fontFamily="@font/nanumsquareeb"
+        android:text="이전"
+        android:textAlignment="center"
+        android:textColor="#765D58"
+        android:textSize="12sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="168dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/nanumsquareeb"
+        android:text="게시판"
+        android:textColor="#765D58"
+        android:textSize="25sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nanumsquareeb"
+        android:text="식집사님들과 일상을 공유해보아요!"
+        android:textColor="#03A63C"
+        android:textSize="12sp"
+        android:layout_marginBottom="50dp"/>
+
+</LinearLayout>

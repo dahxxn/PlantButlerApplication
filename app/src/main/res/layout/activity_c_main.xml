@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 전체 레이아웃 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    android:orientation="vertical"
+    android:padding="30dp">
+    <!--프로필, 포인트, 설정, 오늘의 퀴즈, 만보기 넣을 레이아수 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--프로필, 포인트, 오늘의 퀴즈 레이아웃 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- 프로필, 포인트 레이아웃 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/main_profile"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"></ImageButton>
+
+                <TextView
+                    android:id="@+id/main_coin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:fontFamily="@font/nanumsquareeb"
+                    android:paddingLeft="10dp"
+                    android:text=""
+                    android:textColor="@color/orange"
+                    android:textSize="17sp"></TextView>
+
+                <TextView
+                    android:id="@+id/main_coin_P"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:fontFamily="@font/nanumsquareeb"
+                    android:text="P"
+                    android:textColor="@color/brown"
+                    android:textSize="17sp">
+
+                </TextView>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/main_quiz_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/nanumsquareeb"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:text="@string/quiz_button"
+                android:textColor="@color/brown"
+                android:textSize="17sp"
+                tools:ignore="TouchTargetSizeCheck"></Button>
+
+        </LinearLayout>
+
+        <!-- 설정 버튼, 만보기    -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/main_setting"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitEnd"
+                android:src="@drawable/setting"
+                tools:ignore="SpeakableTextPresentCheck"></ImageButton>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id='@+id/stepCountTag'
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareeb"
+                    android:text="오늘"
+                    android:textColor="@color/brown"
+                    android:textSize="17sp"></TextView>
+
+
+                <TextView
+                    android:id="@+id/sensor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareeb"
+                    android:text=" 0"
+                    android:textColor="@color/orange"
+                    android:textSize="17sp"></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareeb"
+                    android:text="보 걸음"
+                    android:textColor="@color/brown"
+                    android:textSize="17sp"></TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--식물 이미지        -->
+    <FrameLayout
+        android:layout_width="270dp"
+        android:layout_height="320dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/circle_b">
+
+        <FrameLayout
+            android:layout_width="250dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_lg"></FrameLayout>
+
+        <ImageView
+            android:id="@+id/main_plant"
+            android:layout_width="120dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            tools:ignore="SpeakableTextPresentCheck">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/main_plant_pot"
+            android:layout_width="120dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            >
+        </ImageView>
+    </FrameLayout>
+
+    <!--식물 성장도        -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/main_plant_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquareeb"
+            android:textColor="@color/green"
+            android:textSize="20sp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquareeb"
+            android:text="는 "
+            android:textColor="@color/brown"
+            android:textSize="20sp"></TextView>
+
+        <TextView
+            android:id="@+id/main_plant_growth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquareeb"
+            android:textColor="@color/orange"
+            android:textSize="20sp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquareeb"
+            android:text="% 성장 중"
+            android:textColor="@color/brown"
+            android:textSize="20sp"></TextView>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/growth"></ImageView>
+    </LinearLayout>
+
+
+    <!--하단 메뉴(마이페이지, 커뮤니티, 상점, 미션)        -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- 마이페이지       -->
+        <FrameLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="5dp"
+            android:background="@drawable/circle_lg">
+
+            <ImageButton
+                android:id="@+id/main_mypage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/mypage"
+                tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck">
+
+            </ImageButton>
+        </FrameLayout>
+
+        <!--커뮤니티-->
+        <FrameLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="5dp"
+            android:background="@drawable/circle_lg">
+
+            <ImageButton
+                android:id="@+id/main_community"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="TODO"
+                android:scaleType="fitCenter"
+                android:src="@drawable/community"
+                tools:ignore="ContentDescription,HardcodedText,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </FrameLayout>
+
+        <!-- 상점 -->
+        <FrameLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="5dp"
+            android:background="@drawable/circle_lg">
+
+            <ImageButton
+                android:id="@+id/main_store"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/cart"
+                tools:ignore="ContentDescription,SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="5dp"
+            android:background="@drawable/circle_lg">
+
+            <ImageButton
+                android:id="@+id/main_mission"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="TODO"
+                android:scaleType="fitCenter"
+                android:src="@drawable/mission"
+                tools:ignore="ContentDescription,HardcodedText,SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

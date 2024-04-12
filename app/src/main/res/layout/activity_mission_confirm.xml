@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    >
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#B2D9A0"
+        android:fontFamily="@font/nanumsquare_exbold"
+        android:text="이전"
+        android:textAlignment="center"
+        android:textColor="#765D58"
+        android:textSize="15sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="25dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquare_exbold"
+            android:text="사진인증미션"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/brown"
+            android:textSize="25sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:fontFamily="@font/nanumsquare_exbold"
+            android:text="환경 친화적 행동을 한 사진을 골라주세요!"
+            android:textColor="@color/green"
+            android:textSize="14sp" />
+
+        <FrameLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/mybutton"/>
+
+                <ImageView
+                    android:id="@+id/ImageBtn1"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="10dp"
+                >
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/mybutton" />
+
+                <ImageView
+                    android:id="@+id/ImageBtn2"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:clickable="true"
+                android:layout_gravity="end"
+                android:orientation="vertical"
+                android:layout_marginEnd="20dp"
+                >
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/mybutton" />
+
+
+                <ImageView
+                    android:id="@+id/ImageBtn3"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="115dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/mybutton"/>
+
+                <ImageView
+                    android:id="@+id/ImageBtn4"
+
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="115dp"
+                >
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/mybutton" />
+
+                <ImageView
+                    android:id="@+id/ImageBtn5"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:clickable="true"
+                android:layout_gravity="end"
+                android:orientation="vertical"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="115dp"
+                >
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/mybutton" />
+
+
+                <ImageView
+                    android:id="@+id/ImageBtn6"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginTop="230dp">
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/mybutton"/>
+
+                <ImageView
+                    android:id="@+id/ImageBtn7"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="230dp"
+                >
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/mybutton" />
+
+                <ImageView
+                    android:id="@+id/ImageBtn8"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:clickable="true"
+                android:layout_gravity="end"
+                android:orientation="vertical"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="230dp"
+                >
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/mybutton" />
+
+
+                <ImageView
+                    android:id="@+id/ImageBtn9"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+
+            </FrameLayout>
+        </FrameLayout>
+
+        <FrameLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+
+            <Button
+                android:id="@+id/deBtn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/basic_button"
+                android:fontFamily="@font/nanumsquare_exbold"
+                android:text="신고하기 화면전환"
+                android:textAlignment="center"
+                android:textColor="#765D58"
+                android:textSize="18sp"
+                android:textStyle="bold"></Button>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</FrameLayout>

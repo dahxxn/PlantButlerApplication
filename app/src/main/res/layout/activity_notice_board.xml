@@ -1,0 +1,302 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2EfE4"
+    android:orientation="vertical"
+    android:id="@+id/container">
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="21dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#B2D9A0"
+        android:fontFamily="@font/nanumsquareeb"
+        android:text="이전"
+        android:textAlignment="center"
+        android:textColor="#765D58"
+        android:textSize="12sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="168dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/nanumsquareeb"
+        android:text="게시판"
+        android:textColor="#765D58"
+        android:textSize="25sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nanumsquareeb"
+        android:text="식집사님들과 일상을 공유해보아요!"
+        android:textColor="#03A63C"
+        android:textSize="12sp"
+        android:layout_marginBottom="50dp"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="52dp"
+        android:layout_height="46dp"
+        android:layout_marginLeft="40dp"
+        app:srcCompat="@drawable/megaphone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.widget.Button
+                android:id="@+id/board_w1"
+                android:layout_width="345dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_btn"
+                android:backgroundTint="#B2D9A0"
+                android:drawableRight="@drawable/heart"
+                android:fontFamily="@font/nanumsquareeb"
+                android:gravity="center_vertical"
+                android:paddingRight="50dp"
+                android:text="      첫번째 글"
+                android:textColor="#765D58"
+                android:textSize="17sp" />
+
+            <android.widget.Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="325dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#B2D9A0"
+                android:fontFamily="@font/nanumsquareeb"
+                android:text="5"
+                android:textColor="#F2EFE4"
+                android:textSize="12sp" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.widget.Button
+                android:id="@+id/board_w2"
+                android:layout_width="345dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_btn"
+                android:backgroundTint="#B2D9A0"
+                android:drawableRight="@drawable/heart"
+                android:fontFamily="@font/nanumsquareeb"
+                android:gravity="center_vertical"
+                android:paddingRight="50dp"
+                android:text="      두번째 글"
+                android:textColor="#765D58"
+                android:textSize="17sp" />
+
+            <android.widget.Button
+
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="325dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#B2D9A0"
+                android:fontFamily="@font/nanumsquareeb"
+                android:text="5"
+                android:textColor="#F2EFE4"
+                android:textSize="12sp" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.widget.Button
+                android:id="@+id/board_w3"
+                android:layout_width="345dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_btn"
+                android:backgroundTint="#B2D9A0"
+                android:drawableRight="@drawable/heart"
+                android:fontFamily="@font/nanumsquareeb"
+                android:gravity="center_vertical"
+                android:paddingRight="50dp"
+                android:text="      세번째 글"
+                android:textColor="#765D58"
+                android:textSize="17sp" />
+
+            <android.widget.Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="325dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#B2D9A0"
+                android:fontFamily="@font/nanumsquareeb"
+                android:text="5"
+                android:textColor="#F2EFE4"
+                android:textSize="12sp" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.widget.Button
+                android:id="@+id/board_w4"
+                android:layout_width="345dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_btn"
+                android:backgroundTint="#B2D9A0"
+                android:drawableRight="@drawable/heart"
+                android:fontFamily="@font/nanumsquareeb"
+                android:gravity="center_vertical"
+                android:paddingRight="50dp"
+                android:text="      네번째 글"
+                android:textColor="#765D58"
+                android:textSize="17sp" />
+
+            <android.widget.Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="325dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#B2D9A0"
+                android:fontFamily="@font/nanumsquareeb"
+                android:text="5"
+                android:textColor="#F2EFE4"
+                android:textSize="12sp" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.widget.Button
+                android:id="@+id/board_w5"
+                android:layout_width="345dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_btn"
+                android:backgroundTint="#B2D9A0"
+                android:drawableRight="@drawable/heart"
+                android:fontFamily="@font/nanumsquareeb"
+                android:gravity="center_vertical"
+                android:paddingRight="50dp"
+                android:text="      다섯번째 글"
+                android:textColor="#765D58"
+                android:textSize="17sp" />
+
+            <android.widget.Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="325dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#B2D9A0"
+                android:fontFamily="@font/nanumsquareeb"
+                android:text="5"
+                android:textColor="#F2EFE4"
+                android:textSize="12sp" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.widget.Button
+                android:id="@+id/board_w6"
+                android:layout_width="345dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_btn"
+                android:backgroundTint="#B2D9A0"
+                android:drawableRight="@drawable/heart"
+                android:fontFamily="@font/nanumsquareeb"
+                android:gravity="center_vertical"
+                android:paddingRight="50dp"
+                android:text="      여섯번째 글"
+                android:textColor="#765D58"
+                android:textSize="17sp" />
+
+            <android.widget.Button
+                android:id="@+id/writing_like1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="325dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#B2D9A0"
+                android:fontFamily="@font/nanumsquareeb"
+                android:text="5"
+                android:textColor="#F2EFE4"
+                android:textSize="12sp" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/social_pencil"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="21dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#B2D9A0"
+        android:fontFamily="@font/nanumsquareeb"
+        android:text="글쓰기"
+        android:textAlignment="center"
+        android:textColor="#765D58"
+        android:textSize="12sp" />
+
+
+</LinearLayout>

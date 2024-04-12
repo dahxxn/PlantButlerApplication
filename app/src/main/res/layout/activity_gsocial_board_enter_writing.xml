@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2EfE4"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/board_back"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#B2D9A0"
+        android:fontFamily="@font/nanumsquare_exbold"
+        android:text="이전"
+        android:textAlignment="center"
+        android:textColor="#765D58"
+        android:textSize="15sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/nanumsquare_exbold"
+        android:text="게시판"
+        android:textColor="#765D58"
+        android:textSize="25sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nanumsquare_exbold"
+        android:text="식집사님들과 일상을 공유해보아요!"
+        android:textColor="#03A63C"
+        android:textSize="14sp"
+        />
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <View
+            android:layout_width="320dp"
+            android:layout_height="300dp"
+            android:layout_alignParentTop="true"
+
+            android:layout_marginTop="40dp"
+            android:background="@drawable/writing_rectangle" />
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="60dp"/>
+        <!--                android:background="@drawable/person1" -->
+        />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="70dp"
+            android:fontFamily="@font/nanumsquare_exbold"
+            android:text="글쓴이 식집사"
+            android:textColor="#765D58"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/writing_title"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="120dp"
+            android:fontFamily="@font/nanumsquareeb"
+            android:text="충격 분리수거법..!!"
+            android:textColor="#765D58"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/writing_content"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="150dp"
+            android:fontFamily="@font/nanumsquarer"
+            android:text=" 여러분 계란 껍데기가 일반쓰레기인거 알고 계셨나요?\n\n저도 오늘 알고 많이 놀랐네요.. 다른 식집사 님들도 올바른 분리수거법을 배우길 바라요~"
+            android:textColor="#765D58"
+            android:textSize="18sp" />
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left">
+        <ImageButton
+            android:id="@+id/heart_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/heart"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            />
+
+        <TextView
+            android:id="@+id/heart_amt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/nanumsquareeb"
+            android:text="12"
+            android:textColor="#03A63C"
+            android:textSize="18sp" />
+    </FrameLayout>
+
+
+</LinearLayout>

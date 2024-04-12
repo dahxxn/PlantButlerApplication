@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2EfE4"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/back"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#B2D9A0"
+        android:fontFamily="@font/nanumsquare_exbold"
+        android:text="이전"
+        android:textAlignment="center"
+        android:textColor="#765D58"
+        android:textSize="15sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/nanumsquareeb"
+        android:text="이달의 식집사"
+        android:textColor="#765D58"
+        android:textSize="25sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nanumsquareeb"
+        android:text="이달의 식집사 랭킹은?"
+        android:textColor="#03A63C"
+        android:textSize="12sp" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <View
+            android:id="@+id/rectangle1"
+            android:layout_width="100dp"
+            android:layout_height="157dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rectangle1" />
+        <ImageView
+            android:id ="@+id/person1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:id="@+id/person1_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="120dp"
+            android:clickable="true"
+            android:onClick="person1_click"
+            android:fontFamily="@font/nanumsquareeb"
+            android:textColor="#765D58"
+            android:textSize="16sp" />
+        <View
+            android:id="@+id/crown"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/crown" />
+
+        <View
+            android:id="@+id/heart1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="140dp"
+            android:background="@drawable/heart" />
+
+        <TextView
+            android:id="@+id/like_amt1"
+            android:layout_width="40dp"
+            android:layout_height="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="78dp"
+            android:layout_marginTop="145dp"
+            android:fontFamily="@font/nanumsquareeb"
+
+            android:textColor="#03A63C"
+            android:textSize="15sp"
+            />
+
+        <View
+            android:id="@+id/rectangle2"
+            android:layout_width="100dp"
+            android:layout_height="157dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="153dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rectangle1" />
+        <ImageView
+            android:id ="@+id/person2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="167dp"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:id="@+id/person2_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="169dp"
+            android:layout_marginTop="120dp"
+            android:fontFamily="@font/nanumsquareeb"
+
+            android:textColor="#765D58"
+            android:textSize="16sp"
+            android:clickable="true"
+            android:onClick="person2_click"/>
+        <View
+            android:id="@+id/ellipse1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="145dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ellipse" />
+
+        <View
+            android:id="@+id/heart2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="168dp"
+            android:layout_marginTop="140dp"
+            android:background="@drawable/heart" />
+        <TextView
+            android:id="@+id/like_amt2"
+            android:layout_width="40dp"
+            android:layout_height="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="198dp"
+            android:layout_marginTop="145dp"
+            android:fontFamily="@font/nanumsquareeb"
+
+            android:textColor="#03A63C"
+            android:textSize="15sp" />
+        <View
+            android:id="@+id/rectangle3"
+            android:layout_width="100dp"
+            android:layout_height="157dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="36dp"
+            android:background="@drawable/rectangle1" />
+        <ImageView
+            android:id ="@+id/person3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="288dp"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:id="@+id/person3_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="292dp"
+            android:layout_marginTop="120dp"
+            android:clickable="true"
+            android:fontFamily="@font/nanumsquareeb"
+            android:onClick="person3_click"
+
+            android:textColor="#765D58"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/number2"
+            android:layout_width="9dp"
+            android:layout_height="17dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="155dp"
+            android:layout_marginTop="17dp"
+            android:fontFamily="@font/nanumsquareeb"
+            android:text="2"
+            android:textColor="#F2EFE4"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/ellipse2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="262dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ellipse" />
+
+        <TextView
+            android:id="@+id/number3"
+            android:layout_width="9dp"
+            android:layout_height="17dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="272dp"
+            android:layout_marginTop="17dp"
+            android:fontFamily="@font/nanumsquareeb"
+            android:text="3"
+            android:textColor="#F2EFE4"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/heart3"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="285dp"
+            android:layout_marginTop="140dp"
+            android:background="@drawable/heart" />
+
+        <TextView
+            android:id="@+id/like_amt3"
+            android:layout_width="40dp"
+            android:layout_height="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="315dp"
+            android:layout_marginTop="145dp"
+            android:fontFamily="@font/nanumsquareeb"
+
+            android:textColor="#03A63C"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+
+        <View
+            android:id="@+id/rectangle4"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="36dp"
+            android:background="@drawable/rectangle2" />
+
+        <TextView
+            android:id="@+id/person4_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="45dp"
+            android:fontFamily="@font/nanumsquareeb"
+
+            android:textColor="#765D58"
+            android:textSize="16sp"
+            android:clickable="true"
+            android:onClick="person4_click"/>
+
+        <View
+            android:id="@+id/ellipse3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="38dp"
+            android:background="@drawable/ellipse"
+            />
+        <TextView
+            android:id="@+id/number4"
+            android:layout_width="9dp"
+            android:layout_height="17dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="45dp"
+            android:fontFamily="@font/nanumsquareeb"
+            android:text="4"
+            android:textColor="#F2EFE4"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/heart4"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="285dp"
+            android:layout_marginTop="43dp"
+            android:background="@drawable/heart" />
+
+        <TextView
+            android:id="@+id/like_amt4"
+            android:layout_width="40dp"
+            android:layout_height="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="315dp"
+            android:layout_marginTop="48dp"
+            android:fontFamily="@font/nanumsquareeb"
+
+            android:textColor="#F2EFE4"
+            android:textSize="15sp" />
+        <View
+            android:id="@+id/rectangle5"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="36dp"
+            android:background="@drawable/rectangle2" />
+
+        <TextView
+            android:id="@+id/person5_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="120dp"
+            android:fontFamily="@font/nanumsquareeb"
+
+            android:textColor="#765D58"
+            android:textSize="16sp"
+            android:clickable="true"
+            android:onClick="person5_click"/>
+        <View
+            android:id="@+id/ellipse4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="114dp"
+            android:background="@drawable/ellipse"
+            />
+        <TextView
+            android:id="@+id/number5"
+            android:layout_width="9dp"
+            android:layout_height="17dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="121dp"
+            android:fontFamily="@font/nanumsquareeb"
+            android:text="5"
+            android:textColor="#F2EFE4"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/heart5"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="285dp"
+            android:layout_marginTop="117dp"
+            android:background="@drawable/heart" />
+
+        <TextView
+            android:id="@+id/like_amt5"
+            android:layout_width="40dp"
+            android:layout_height="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="315dp"
+            android:layout_marginTop="122dp"
+            android:fontFamily="@font/nanumsquareeb"
+
+            android:textColor="#F2EFE4"
+            android:textSize="15sp" />
+        <View
+            android:id="@+id/rectangle6"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="176dp"
+            android:layout_marginRight="36dp"
+            android:background="@drawable/rectangle2" />
+        <TextView
+            android:id="@+id/person6_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="196dp"
+            android:fontFamily="@font/nanumsquareeb"
+
+            android:textColor="#765D58"
+            android:textSize="16sp"
+            android:clickable="true"
+            android:onClick="person6_click"/>
+        <View
+            android:id="@+id/ellipse5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="190dp"
+            android:background="@drawable/ellipse"
+            />
+        <TextView
+            android:id="@+id/number6"
+            android:layout_width="9dp"
+            android:layout_height="17dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="197dp"
+            android:fontFamily="@font/nanumsquareeb"
+            android:text="6"
+            android:textColor="#F2EFE4"
+            android:textSize="15sp" />
+        <View
+            android:id="@+id/heart6"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="285dp"
+            android:layout_marginTop="195dp"
+            android:background="@drawable/heart" />
+        <TextView
+            android:id="@+id/like_amt6"
+            android:layout_width="40dp"
+            android:layout_height="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="315dp"
+            android:layout_marginTop="200dp"
+            android:fontFamily="@font/nanumsquareeb"
+
+            android:textColor="#F2EFE4"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

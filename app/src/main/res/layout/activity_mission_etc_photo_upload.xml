@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/배경_베이지"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanumsquare_exbold"
+        android:text="환경친화적인 행동"
+        android:textColor="@color/포인트_노랑"
+        android:textSize="28sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanumsquare_exbold"
+        android:text="사진을 올려 주세요"
+        android:textColor="@color/포인트_갈색"
+        android:textSize="28sp" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <View
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:background="@drawable/mybutton_none" />
+
+        <ImageView
+            android:id="@+id/Gallery_Image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:src="@drawable/picture"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/gallery_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mybutton"
+            android:fontFamily="@font/nanumsquare_exbold"
+            android:text="갤러리"
+            android:layout_marginRight="30dp"
+            android:textColor="@color/포인트_갈색"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mybutton"
+            android:fontFamily="@font/nanumsquare_exbold"
+            android:text="등록"
+            android:layout_marginRight="30dp"
+            android:textColor="@color/포인트_갈색"
+            android:textSize="18sp"
+            />
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/basic_button"
+            android:fontFamily="@font/nanumsquare_exbold"
+            android:text="이전"
+            android:textColor="@color/포인트_갈색"
+            android:textSize="18sp"
+            >
+        </Button>
+
+
+    </LinearLayout>
+
+</LinearLayout>

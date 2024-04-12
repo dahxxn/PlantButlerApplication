@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black_blur">#B3000000</color>
+
+    <color name="beige">#F2EFE4</color>
+    <color name="brown">#765D58</color>
+    <color name="orange">#F2A413</color>
+    <color name="light_green">#B2D9A0</color>
+    <color name="green">#03A63C</color>
+    <color name="red">#F21313</color>
+
+    <color name="배경_베이지">#F2EFE4</color>
+    <color name="포인트_카키">#648c38</color>
+    <color name="포인트_초록">#03A63C</color>
+    <color name="포인트_노랑">#F2A413</color>
+    <color name="포인트_갈색">#765D58</color>
+</resources>

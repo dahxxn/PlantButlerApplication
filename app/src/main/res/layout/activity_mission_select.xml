@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    >
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#B2D9A0"
+        android:fontFamily="@font/nanumsquare_exbold"
+        android:text="이전"
+        android:textAlignment="center"
+        android:textColor="#765D58"
+        android:textSize="15sp">
+
+    </Button>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquare_exbold"
+            android:text="선택미션 목록"
+            android:textColor="@color/brown"
+            android:textSize="25sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nanumsquare_exbold"
+            android:text="다른 집사들의 검토 후 경험치가 쌓여요!"
+            android:textColor="@color/green"
+            android:textSize="14sp" />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:columnCount="2"
+            android:orientation="horizontal">
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="120dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/mybutton" />
+
+
+                <ImageView
+                    android:id="@+id/public_transportation_button"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:src="@drawable/selectmission_bus"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|bottom"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/nanumsquare_exbold"
+                    android:text="대중교통 이용"
+                    android:textColor="@color/brown" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_gravity="center|top"
+                    android:background="@drawable/mybutton"
+                    android:backgroundTint="@color/brown"
+                    android:fontFamily="@font/nanumsquare_exbold"
+                    android:padding="10dp"
+                    android:text="5% 성장해요"
+                    android:textColor="@color/배경_베이지"
+                    android:textSize="12sp" />
+
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="120dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/mybutton" />
+
+                <ImageView
+                    android:id="@+id/trash"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:src="@drawable/selectmission_trashpick"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|bottom"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/nanumsquare_exbold"
+                    android:text="쓰레기 줍기"
+                    android:textColor="@color/brown" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_gravity="center|top"
+                    android:background="@drawable/mybutton"
+                    android:backgroundTint="@color/brown"
+                    android:fontFamily="@font/nanumsquare_exbold"
+                    android:padding="10dp"
+                    android:text="5% 성장해요"
+                    android:textColor="@color/배경_베이지"
+                    android:textSize="12sp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="120dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/mybutton" />
+
+
+                <ImageView
+                    android:id="@+id/tumbler"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:src="@drawable/selectmission_tumblr"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|bottom"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/nanumsquare_exbold"
+                    android:text="텀블러 사용"
+                    android:textColor="@color/포인트_갈색" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_gravity="center|top"
+                    android:background="@drawable/mybutton"
+                    android:backgroundTint="@color/포인트_갈색"
+                    android:fontFamily="@font/nanumsquare_exbold"
+                    android:padding="10dp"
+                    android:text="5% 성장해요"
+                    android:textColor="@color/배경_베이지"
+                    android:textSize="12sp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="120dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/mybutton" />
+
+
+                <ImageView
+                    android:id="@+id/basket"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:src="@drawable/selectmission_ecobag"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|bottom"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/nanumsquare_exbold"
+                    android:text="장바구니 사용"
+                    android:textColor="@color/포인트_갈색" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_gravity="center|top"
+                    android:background="@drawable/mybutton"
+                    android:backgroundTint="@color/포인트_갈색"
+                    android:fontFamily="@font/nanumsquare_exbold"
+                    android:padding="10dp"
+                    android:text="5% 성장해요"
+                    android:textColor="@color/배경_베이지"
+                    android:textSize="12sp" />
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="120dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/mybutton" />
+
+
+                <ImageView
+                    android:id="@+id/separate"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:src="@drawable/selectmission_trash"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|bottom"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/nanumsquare_exbold"
+                    android:text="분리수거"
+                    android:textColor="@color/포인트_갈색" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_gravity="center|top"
+                    android:background="@drawable/mybutton"
+                    android:backgroundTint="@color/포인트_갈색"
+                    android:fontFamily="@font/nanumsquare_exbold"
+                    android:padding="10dp"
+                    android:text="5% 성장해요"
+                    android:textColor="@color/배경_베이지"
+                    android:textSize="12sp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="120dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/mybutton" />
+
+
+                <ImageView
+                    android:id="@+id/etc"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:src="@drawable/selectmission_etc"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|bottom"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/nanumsquare_exbold"
+                    android:text="기타"
+                    android:textColor="@color/포인트_갈색" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_gravity="center|top"
+                    android:background="@drawable/mybutton"
+                    android:backgroundTint="@color/포인트_갈색"
+                    android:fontFamily="@font/nanumsquare_exbold"
+                    android:padding="10dp"
+                    android:text="5% 성장해요"
+                    android:textColor="@color/배경_베이지"
+                    android:textSize="12sp" />
+
+            </FrameLayout>
+
+        </GridLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</FrameLayout>

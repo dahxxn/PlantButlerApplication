@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/beige"
+    android:padding="25dp"
+
+    >
+    <Button
+        android:id="@+id/back"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#B2D9A0"
+        android:fontFamily="@font/nanumsquare_exbold"
+        android:text="이전"
+        android:textAlignment="center"
+        android:textColor="#765D58"
+        android:textSize="15sp" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/profile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/girl"
+            />
+
+        <ImageButton
+            android:id="@+id/profile_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="110dp"
+            android:background="@drawable/empty_pencil"
+            />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        >
+        <View
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rectangle2"
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="닉네임"
+            android:textAlignment="center"
+            android:textColor="#765D58"
+            android:textSize="18sp"
+            android:fontFamily="@font/nanumsquare_exbold"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            />
+        <TextView
+            android:id="@+id/nickname_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquare_exbold"
+
+            android:textColor="@color/포인트_초록"
+            android:textSize="17sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="60dp"
+            android:layout_gravity="end"
+             />
+        <ImageButton
+            android:id="@+id/nickname_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="end"
+            android:background="@drawable/empty_pencil" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        >
+        <View
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rectangle2"
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이메일"
+            android:textAlignment="center"
+            android:textColor="#765D58"
+            android:textSize="18sp"
+            android:fontFamily="@font/nanumsquare_exbold"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            />
+        <TextView
+            android:id="@+id/email_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquare_exbold"
+
+            android:textColor="@color/포인트_초록"
+            android:textSize="15sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="57dp"
+            android:layout_gravity="end"
+            />
+        <ImageButton
+            android:id="@+id/email_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="end"
+            android:background="@drawable/empty_pencil" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        >
+        <View
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rectangle2"
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비밀번호"
+            android:textAlignment="center"
+            android:textColor="#765D58"
+            android:textSize="18sp"
+            android:fontFamily="@font/nanumsquare_exbold"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            />
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquare_exbold"
+
+            android:textColor="@color/포인트_초록"
+            android:textSize="17sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="60dp"
+            android:layout_gravity="end"
+            />
+        <ImageButton
+            android:id="@+id/password_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="end"
+
+            android:background="@drawable/empty_pencil" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/complete_setting"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/round_btn"
+        android:backgroundTint="#B2D9A0"
+        android:fontFamily="@font/nanumsquare_exbold"
+        android:text="설정완료"
+        android:textAlignment="center"
+        android:textColor="#765D58"
+
+        android:textSize="17sp" />
+
+</LinearLayout>

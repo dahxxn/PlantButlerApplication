@@ -1,0 +1,145 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2EfE4"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="18dp"
+        android:src="@drawable/girl"
+        android:id="@+id/profile"
+        android:layout_marginTop="50dp"
+        />
+
+
+    <ImageButton
+        android:id="@+id/profile_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        app:srcCompat="@drawable/empty_pencil" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.widget.Button
+            android:layout_width="345dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/round_btn"
+            android:backgroundTint="#B2D9A0"
+            android:drawableRight="@drawable/empty_pencil"
+            android:fontFamily="@font/nanumsquareeb"
+            android:gravity="center_vertical"
+            android:paddingRight="20dp"
+            android:text="      닉네임"
+            android:textColor="#765D58"
+            android:textSize="17sp"
+
+            />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.widget.Button
+            android:layout_width="345dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/round_btn"
+            android:backgroundTint="#B2D9A0"
+            android:drawableRight="@drawable/empty_pencil"
+            android:fontFamily="@font/nanumsquareeb"
+            android:gravity="center_vertical"
+            android:paddingRight="20dp"
+            android:text="      아이디"
+            android:textColor="#765D58"
+            android:textSize="17sp" />
+
+
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.widget.Button
+            android:layout_width="345dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/round_btn"
+            android:backgroundTint="#B2D9A0"
+            android:drawableRight="@drawable/empty_pencil"
+            android:fontFamily="@font/nanumsquareeb"
+            android:gravity="center_vertical"
+            android:paddingRight="20dp"
+            android:text="      이메일"
+            android:textColor="#765D58"
+            android:textSize="17sp" />
+
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.widget.Button
+            android:layout_width="345dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/round_btn"
+            android:backgroundTint="#B2D9A0"
+            android:drawableRight="@drawable/empty_pencil"
+            android:fontFamily="@font/nanumsquareeb"
+            android:gravity="center_vertical"
+            android:paddingRight="20dp"
+            android:text="      비밀번호"
+            android:textColor="#765D58"
+            android:textSize="17sp" />
+
+
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/complete_setting"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/round_rect_lg"
+        android:fontFamily="@font/nanumsquareeb"
+        android:text="설정 완료"
+        android:textColor="@color/brown"
+        android:textSize="15sp"
+        ></Button>
+
+    <Button
+        android:id="@+id/down"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DOWNLOAD" />
+
+</LinearLayout>

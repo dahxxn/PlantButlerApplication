@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="50dp">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquare_exbold"
+            android:text="비밀번호 "
+            android:textColor="@color/포인트_노랑"
+            android:textSize="24sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquare_exbold"
+            android:text="               찾기"
+            android:textColor="@color/포인트_갈색"
+            android:textSize="24sp" />
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:hint="이메일을 입력하세요"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:fontFamily="@font/nanumsquare_exbold"
+        />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/nanumsquare_exbold"
+        android:textColor="@color/포인트_초록" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/x"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mybutton"
+            android:fontFamily="@font/nanumsquare_exbold"
+            android:text="닫기"
+            android:textColor="@color/배경_베이지"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/registerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/mybutton"
+            android:fontFamily="@font/nanumsquare_exbold"
+            android:text="확인"
+            android:textColor="@color/포인트_갈색"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

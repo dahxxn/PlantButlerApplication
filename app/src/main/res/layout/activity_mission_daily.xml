@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/beige">
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#B2D9A0"
+        android:fontFamily="@font/nanumsquare_exbold"
+        android:text="이전"
+        android:textAlignment="center"
+        android:textColor="#765D58"
+        android:textSize="15sp" />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanumsquare_exbold"
+        android:layout_gravity="center"
+        android:text="일일 미션 목록"
+        android:textColor="@color/brown"
+        android:textSize="25dp"
+        android:layout_marginBottom="20dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/beige"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="60dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mybutton_none"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/xp_3000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareeb"
+                    android:text="1 P"
+                    android:textColor="@color/orange"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/nanumsquareeb"
+                    android:text="3000 보 걷기"
+                    android:textColor="@color/green"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/daily_3000_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="true"
+                    android:fontFamily="@font/nanumsquareeb"
+                    android:text="미션확인"
+                    android:textColor="@color/brown"
+                    android:textSize="20sp"
+                    android:textStyle=""
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/mybutton_none"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/xp_4000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareeb"
+                    android:text="2 P"
+                    android:textColor="@color/orange"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/nanumsquareeb"
+                    android:text="4000 보 걷기"
+                    android:textColor="@color/green"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/daily_4000_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="true"
+                    android:fontFamily="@font/nanumsquareeb"
+                    android:text="미션확인"
+                    android:textColor="@color/brown"
+                    android:textSize="20sp"
+                    android:textStyle=""
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/mybutton_none"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/xp_5000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareeb"
+                    android:text="3 P"
+                    android:textColor="@color/orange"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/nanumsquareeb"
+                    android:text="5000 보 걷기"
+                    android:textColor="@color/green"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/daily_5000_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="true"
+                    android:fontFamily="@font/nanumsquareeb"
+                    android:text="미션확인"
+                    android:textColor="@color/brown"
+                    android:textSize="20sp"
+                    android:textStyle=""
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/mybutton_none"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/xp_10000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareeb"
+                    android:text="10P"
+                    android:textColor="@color/orange"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/nanumsquareeb"
+                    android:text="10000 보 걷기"
+                    android:textColor="@color/green"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/daily_10000_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="true"
+                    android:fontFamily="@font/nanumsquareeb"
+                    android:text="미션확인"
+                    android:textColor="@color/brown"
+                    android:textSize="20sp"
+                    android:textStyle=""
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/mybutton_none"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/xp_15000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareeb"
+                    android:text="20P"
+                    android:textColor="@color/orange"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/nanumsquareeb"
+                    android:text="15000보 걷기"
+                    android:textColor="@color/green"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/daily_15000_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="true"
+                    android:fontFamily="@font/nanumsquareeb"
+                    android:text="미션확인"
+                    android:textColor="@color/brown"
+                    android:textSize="20sp"
+                    android:textStyle=""
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/mybutton_none"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/xp_30000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareeb"
+                    android:text="30P"
+                    android:textColor="@color/orange"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/nanumsquareeb"
+                    android:text="30000보 걷기"
+                    android:textColor="@color/green"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/daily_30000_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="true"
+                    android:fontFamily="@font/nanumsquareeb"
+                    android:text="미션확인"
+                    android:textColor="@color/brown"
+                    android:textSize="20sp"
+                    android:textStyle=""
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/mybutton_none"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/xp_50000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareeb"
+                    android:text="50P"
+                    android:textColor="@color/orange"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/nanumsquareeb"
+                    android:text="50000 보 걷기"
+                    android:textColor="@color/green"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/daily_50000_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="true"
+                    android:fontFamily="@font/nanumsquareeb"
+                    android:text="미션확인"
+                    android:textColor="@color/brown"
+                    android:textSize="20sp"
+                    android:textStyle="" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

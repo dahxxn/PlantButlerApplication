@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">My Application2</string>
+
+    <string name="plant1.1_text">
+        직사광선은 피해주세요\n
+        물을 아주 좋아해요\n
+        공기 정화에 탁월해요
+    </string>
+
+    <string name="plant1.2_text">
+        햇빛을 아주 좋아해요\n
+        겉흙이 마르면 물을 주세요\n
+        비료를 좋아해요
+    </string>
+
+    <string name="quiz_button">오늘의 퀴즈 풀기</string>
+
+</resources>

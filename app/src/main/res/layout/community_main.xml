@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/beige">
+
+    <Button
+        android:id="@id/backBtn"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#B2D9A0"
+        android:fontFamily="@font/nanumsquare_exbold"
+        android:text="이전"
+        android:textAlignment="center"
+        android:textColor="#765D58"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="60dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nanumsquare_exbold"
+            android:text="커뮤니티"
+            android:textColor="#765D58"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/mygardenBtn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/mybutton"
+            android:fontFamily="@font/nanumsquare_exbold"
+            android:text="나만의 정원"
+            android:textColor="@color/포인트_갈색"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/notice_board_btn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/mybutton"
+            android:fontFamily="@font/nanumsquare_exbold"
+            android:text="게시판"
+            android:textColor="@color/포인트_갈색"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/c_rank_btn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/mybutton"
+            android:fontFamily="@font/nanumsquare_exbold"
+            android:text="이달의 식집사"
+            android:textColor="@color/포인트_갈색"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/c_news_btn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/mybutton"
+            android:fontFamily="@font/nanumsquare_exbold"
+            android:text="뉴스기사"
+            android:textColor="@color/포인트_갈색"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

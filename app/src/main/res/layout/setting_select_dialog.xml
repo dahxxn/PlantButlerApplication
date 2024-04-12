@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:layout_gravity="center"
+    >
+
+
+    <Button
+        android:id="@+id/profile_btn"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="프로필  수정"
+        android:textSize="20dp"
+        android:fontFamily="@font/nanumsquare_exbold"
+        android:textColor="@color/포인트_갈색"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/mybutton"/>
+
+
+    <Button
+        android:id="@+id/logout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="로그아웃"
+        android:textSize="20dp"
+        android:fontFamily="@font/nanumsquare_exbold"
+        android:textColor="@color/포인트_갈색"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/mybutton"/>
+
+    <Button
+        android:id="@+id/quit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="탈퇴"
+        android:textSize="20dp"
+        android:fontFamily="@font/nanumsquare_exbold"
+        android:textColor="@color/포인트_갈색"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/mybutton"/>
+
+
+</LinearLayout>

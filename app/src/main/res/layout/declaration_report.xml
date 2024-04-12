@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical"
+    android:padding="20dp">
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/emergency">
+    </ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:fontFamily="@font/nanumsquare_exbold"
+        android:text="안타깝습니다!!"
+        android:textColor="@color/포인트_노랑"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:fontFamily="@font/nanumsquare_exbold"
+            android:text="식집사님의 사진이 신고 되었어요.."
+            android:textColor="@color/포인트_갈색"
+            android:textSize="20sp">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/nanumsquare_exbold"
+        android:text="경험치와 코인이 대폭 감소합니다!"
+        android:textColor="@color/포인트_초록"
+        android:textSize="18sp"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/yesbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mybutton"
+            android:fontFamily="@font/nanumsquare_exbold"
+            android:text="확인"
+            android:textColor="@color/포인트_갈색"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+</LinearLayout>
